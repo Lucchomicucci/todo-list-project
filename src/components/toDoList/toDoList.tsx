@@ -26,13 +26,12 @@ const ToDoList: React.FC = () => {
 
     return(
         <div className={styles.container}>
-        <AddToDo handleSubmit={addToDo} />
-        {toDos?.length > 0 ? (
-            toDos?.map(td => <ToDoItem toDo={td} key={td.id} handleDelete={deleteToDo}/>)
+            <AddToDo handleSubmit={addToDo} />
+            {toDos?.length > 0 ? (
+                toDos?.map(td => <ToDoItem toDo={td} key={td.id} handleDelete={deleteToDo} />)
             ) : (
-            <p>There's not to do's</p>
-            )
-        }
+                <p>There's not to do's</p>
+            )}
         </div>
     )
 }

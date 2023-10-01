@@ -4,6 +4,8 @@
 
 .todo{
     min-width: 100px;
+    font-size: 20px;
+    color: white;
 }
 
 .icons{
@@ -13,6 +15,7 @@
 
 .icon{
     cursor: pointer;
+    font-size: 20px;
 }
 
 .check{

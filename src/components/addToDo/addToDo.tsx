@@ -19,8 +19,8 @@ const AddToDo: React.FC<Props> = ({handleSubmit}) => {
 
     return(
         <div className={styles.container}>
-        <Input placeholder="Write your to do here..." value={value} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)} />
-        <Button type="primary" onClick={saveToDo}>Add</Button>
+        <Input placeholder="Write your to do here..." value={value} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)} size="large" />
+        <Button type="primary" onClick={saveToDo} size="large">Add</Button>
         </div>
     )
 }
