@@ -1,3 +1,7 @@
+# Simple TO DO LIST project
+
+This is a simple to do list project is made with Vitejs with React and Typescript
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
