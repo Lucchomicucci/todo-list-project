@@ -7,11 +7,12 @@ import { Col, Row } from 'antd';
 import styles from './styles.module.css'
 
 interface Props {
-    toDo: ToDoI    
+    toDo: ToDoI;
+    handleDelete: (arg0: number) => void    
 }
 
-const ToDoItem: React.FC<Props> = ({toDo}) => {
-    const {title, done} = toDo
+const ToDoItem: React.FC<Props> = ({toDo, handleDelete}) => {
+    const {title, done, id} = toDo
 
     const [checked, setChecked] = React.useState<boolean>(done ?? false)
 
@@ -29,7 +30,7 @@ const ToDoItem: React.FC<Props> = ({toDo}) => {
                 </Col>
                 <Col span={3} className={styles.icons}>
                     <EditFilled className={styles.icon} onClick={() => console.log('edit')}/>
-                    <DeleteFilled className={styles.icon} onClick={() => console.log('delete')}/>
+                    <DeleteFilled className={styles.icon} onClick={() => handleDelete(id)}/>
                 </Col>
             </Row>
     )
