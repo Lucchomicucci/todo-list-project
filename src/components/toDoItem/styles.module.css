@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+}
+
+.todo{
+    min-width: 100px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.check{
+    text-decoration: line-through;
+}
