@@ -7,11 +7,11 @@ import styles from './styles.module.css'
 
 interface Props {
     toDo: ToDoI;
-    handleDelete: (arg0: number) => void;
+    handleDelete: (arg0: string) => void;
 }
 
 const ToDoItem: React.FC<Props> = ({toDo, handleDelete}) => {
-    const {title, done, id} = toDo
+    const {title, done, _id} = toDo
 
     const [checked, setChecked] = React.useState<boolean>(done ?? false)
 
@@ -21,7 +21,7 @@ const ToDoItem: React.FC<Props> = ({toDo, handleDelete}) => {
 
     const confirm = () => {
         message.success('To do deleted');
-        handleDelete(id)
+        handleDelete(_id)
       };
 
     return(
